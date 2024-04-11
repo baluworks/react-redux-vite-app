@@ -1,9 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`App Render 1`] = `
-<div>
-  <h1>
-    Welcome to React + vite
-  </h1>
-</div>
-`;

@@ -31,7 +31,7 @@ npm install bootstrap react-bootstrap
 Add this line to _src/main.jsx_:
 
 ```js
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 ```
 
 ## Update port to 3000
@@ -77,7 +77,7 @@ To make [jest-dom matchers](https://github.com/testing-library/jest-dom#custom-m
 1. add these contents:
 
 ```js
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 ```
 
 ## Add Vitest and Testing Library plugins to ESLint
@@ -96,7 +96,7 @@ In _.eslintrc.cjs_:
 At the top, require the Vitest plugin:
 
 ```js
-const vitest = require('eslint-plugin-vitest');
+const vitest = require("eslint-plugin-vitest");
 ```
 
 Then Add this property / value to the top-level `module.exports` object:
@@ -125,11 +125,11 @@ Add these to the `rules` object in _.eslintrc.cjs_:
 
 ```json
 {
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
 ```
 
@@ -163,3 +163,52 @@ npm test
 - [creating a Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 - [Vitest Testing Library example](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
 - [Vitest ESLint plugin](https://www.npmjs.com/package/eslint-plugin-vitest)
+
+Project Folder Structure:
+
+your-react-redux-saga-app/
+├── public/ // Static assets (images, fonts, etc.)
+│ └── favicon.ico
+│ └── ...
+├── src/ // Source code for your React application
+│ ├── App.css // Global CSS styles for the entire application (optional)
+│ ├── App.js // Main application component (entry point)
+│ ├── components/ // Reusable React components
+│ │ ├── Button.js
+│ │ ├── Card.js
+│ │ ├── ...
+│ ├── pages/ // Reusable React components
+│ │ ├── Home.js
+│ │ ├── Login.js
+│ │ ├── ...
+│ ├── constants/ // Application-wide constants
+│ │ ├── api.js // API URLs and other constants related to API interactions
+│ │ ├── colors.js // Color theme definitions
+│ │ └── ...
+│ ├── hooks/ // Custom React hooks (optional)
+│ │ └── useFetchData.js
+│ ├── reducers/ // Redux reducers (optional, can be nested within store)
+│ │ ├── appReducer.js
+│ │ ├── ...
+│ ├── sagas/ // Redux-Saga sagas for asynchronous operations
+│ │ ├── appSaga.js
+│ │ ├── ...
+│ ├── services/ // Services for interacting with APIs, databases, etc. (optional)
+│ │ └── api.js
+│ ├── styles/ // Reusable CSS styles (separate from global styles)
+│ │ └── Button.module.css
+│ │ └── ...
+│ ├── store/ // Redux store setup (optional, can be a single file)
+│ │ ├── configureStore.js
+│ │ └── rootReducer.js (optional if reducers are separate)
+│ ├── utils/ // Utility functions (optional)
+│ │ └── helpers.js
+│ ├── tests/ // Unit and integration tests for components and logic
+│ │ ├── components/ // Component-specific tests
+│ │ ├── sagas/ // Saga tests
+│ │ └── ...
+│ ├── index.js // Main application entry point
+│ └── ... // Additional folders as needed
+├── package.json // Project dependencies and scripts
+├── .eslintrc.cjs // ESLint configuration (optional)
+├── ... // Other configuration files (e.g., .prettierrc, .gitignore)

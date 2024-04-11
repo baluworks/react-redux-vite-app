@@ -3,7 +3,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Welcome to React + vite</h1>
+      {/*  Global menu Heresrc/App.jsx */}
+      {/* <!-- rest of the components here -->*/}
     </>
   );
 }
