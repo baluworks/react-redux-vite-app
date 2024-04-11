@@ -1,6 +1,6 @@
 # Completed code for React-Redux-Vite-App
 
-refernce taken from  [React Testing Library with Jest / Vitest](https://www.udemy.com/course/react-testing-library)
+refernce taken from [React Testing Library with Jest / Vitest](https://www.udemy.com/course/react-testing-library)
 
 ## How this project was created
 
@@ -31,7 +31,7 @@ npm install bootstrap react-bootstrap
 Add this line to _src/main.jsx_:
 
 ```js
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
 ## Update port to 3000
@@ -77,7 +77,7 @@ To make [jest-dom matchers](https://github.com/testing-library/jest-dom#custom-m
 1. add these contents:
 
 ```js
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom';
 ```
 
 ## Add Vitest and Testing Library plugins to ESLint
@@ -96,7 +96,7 @@ In _.eslintrc.cjs_:
 At the top, require the Vitest plugin:
 
 ```js
-const vitest = require("eslint-plugin-vitest");
+const vitest = require('eslint-plugin-vitest');
 ```
 
 Then Add this property / value to the top-level `module.exports` object:
@@ -125,11 +125,11 @@ Add these to the `rules` object in _.eslintrc.cjs_:
 
 ```json
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true
 }
 ```
 
