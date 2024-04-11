@@ -164,6 +164,7 @@ npm test
 - [Vitest Testing Library example](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
 - [Vitest ESLint plugin](https://www.npmjs.com/package/eslint-plugin-vitest)
 
+```sh
 Project Folder Structure:
 
 your-react-redux-saga-app/
@@ -212,3 +213,5 @@ your-react-redux-saga-app/
 ├── package.json // Project dependencies and scripts
 ├── .eslintrc.cjs // ESLint configuration (optional)
 ├── ... // Other configuration files (e.g., .prettierrc, .gitignore)
+
+```
