@@ -188,9 +188,11 @@ your-react-redux-saga-app/
 │ │ └── ...
 │ ├── hooks/ // Custom React hooks (optional)
 │ │ └── useFetchData.js
-│ ├── reducers/ // Redux reducers (optional, can be nested within store)
-│ │ ├── appReducer.js
-│ │ ├── ...
+│ ├── features/ // Redux reducers (optional, can be nested within store)
+│ │ ├── feature
+      └── featureSlice.js
+      └── feature.jsx
+│ │ ├──
 │ ├── sagas/ // Redux-Saga sagas for asynchronous operations
 │ │ ├── appSaga.js
 │ │ ├── ...
