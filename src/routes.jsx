@@ -4,6 +4,8 @@ import HomeLayout from "./layouts/HomeLayout";
 import ContactUs from "./features/contactUs/contactUs";
 import GlobalHeader from "./features/Header/GlobalHeader";
 import {Outlet} from "react-router-dom";
+import Address1 from "./features/contactUs/permanentAddress";
+import Address2 from "./features/contactUs/presentAddress";
 // import {BrowserRouter} from "react-router-dom";
 
 // function CustomRouter() {
@@ -31,7 +33,21 @@ const routes = [
       },
       {
         path: "/contact",
-        element: <ContactUs />,
+        element: (
+          <ContactUs>
+            <Outlet />
+          </ContactUs>
+        ),
+        children: [
+          {
+            index: true,
+            element: <Address1 />,
+          },
+          {
+            path: "ad2",
+            element: <Address2 />,
+          },
+        ],
       },
     ],
   },
