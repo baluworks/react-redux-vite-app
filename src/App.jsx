@@ -2,14 +2,14 @@
 import {Provider} from "react-redux";
 import "./App.css";
 import store from "./store/configStore.js";
-import Home from "./features/home/home";
+import {RouterProvider, createBrowserRouter} from "react-router-dom";
+import routes from "./routes.jsx";
 function App() {
+  const router = createBrowserRouter(routes);
   return (
     <>
-      {/*  Global menu Heresrc/App.jsx */}
-      {/* <!-- rest of the components here -->*/}
       <Provider store={store}>
-        <Home />
+        <RouterProvider router={router}></RouterProvider>
       </Provider>
     </>
   );
