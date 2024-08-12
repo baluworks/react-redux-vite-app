@@ -23,8 +23,13 @@ jobs:
 
       - name: Build the app
         run: npm run build
+        
+      - name: List build directory
+        run: ls -la build
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: |
+          npm install -g gh-pages
+          gh-pages -d build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
