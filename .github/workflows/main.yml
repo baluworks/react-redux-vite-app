@@ -1,6 +1,6 @@
 name: Deploy React App
-
 on:
+  workflow_dispatch:
   push:
     branches:
       - pwa  # Change this to your branch name if different
