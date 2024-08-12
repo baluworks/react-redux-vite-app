@@ -23,9 +23,6 @@ jobs:
 
       - name: Build the app
         run: npm run build
-        
-      - name: List build directory
-        run: ls -la build
 
       - name: Deploy to GitHub Pages
         run: |
