@@ -10,8 +10,11 @@
     "preview": "vite preview",
     "test:ui": "vitest --ui",
     "test": "vitest --watch",
-    "start": "vite --port 3000"
+    "start": "vite --port 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://baluworks.github.io/react-redux-vite-app",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "bootstrap": "^5.3.3",
@@ -36,7 +39,7 @@
     "eslint-plugin-vitest": "^0.5.1",
     "jsdom": "^24.0.0",
     "vite": "^5.2.0",
-    "vitest": "^1.4.0"
+    "vitest": "^1.4.0",
     "gh-pages": "^3.2.3"
   }
 }
