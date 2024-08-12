@@ -32,9 +32,15 @@ jobs:
         run: ls -la build
 
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm install -g gh-pages
-          gh-pages -d build
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          build: ./dist
+
+      # - name: Deploy to GitHub Pages
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     npm install -g gh-pages
+      #     gh-pages -d build
         
