@@ -23,6 +23,10 @@ jobs:
 
       - name: Build the app
         run: npm run build
+      - name: Configure Git user
+        run: |
+          git config --global user.name "Balajee Choudula"
+          git config --global user.email "baluworks@gmail.com"
 
       - name: List dist directory
         run: ls -la build
