@@ -7,6 +7,7 @@ export default defineConfig({
     outDir: 'build'
   },
   plugins: [react()],
+  base: '/react-redux-vite-app/'
   server: {
     port: 3000,
   },
