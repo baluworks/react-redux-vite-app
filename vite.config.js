@@ -7,7 +7,9 @@ export default defineConfig({
   base: '/react-redux-vite-app/',
   build: {
     outDir: 'dist',
+    
     rollupOptions: {
+      input: './src/main.jsx',
       output: {
         entryFileNames: 'assets/[name].js',
         chunkFileNames: 'assets/[name].js',
