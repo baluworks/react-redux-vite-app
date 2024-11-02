@@ -13,7 +13,7 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: '/react-redux-vite-app/',
+  base: './',
   server: {
     port: 3000,
   },
