@@ -3,17 +3,11 @@ import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    outDir: 'build',
-    rollupOptions: {
-      input: './src/main.jsx',
-      output: {
-        entryFileNames: 'main.js'
-      }
-    }
-  },
   plugins: [react()],
-  base: './',
+  base: '/react-redux-vite-app/',
+  build: {
+    outDir: 'dist'
+  },
   server: {
     port: 3000,
   },
