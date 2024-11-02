@@ -14,7 +14,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://baluworks.github.io/react-redux-vite-app",
+  "homepage": "https://baluworks.github.io/react-redux-vite-app/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "bootstrap": "^5.3.3",
