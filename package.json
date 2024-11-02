@@ -12,7 +12,7 @@
     "test": "vitest --watch",
     "start": "vite --port 3000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "homepage": "https://baluworks.github.io/react-redux-vite-app/",
   "dependencies": {
