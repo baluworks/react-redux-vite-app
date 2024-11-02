@@ -5,6 +5,7 @@ const homeSlice = createSlice({
   initialState: {counter: 0},
   reducers: {
     increment: (state) => {
+      
       state.counter += 1;
     },
     incrementByAmount: (state, action) => {

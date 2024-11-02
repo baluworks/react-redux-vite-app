@@ -7,6 +7,7 @@ export default function Home() {
   const count = useSelector((state) => state.home.counter);
   const dispatch = useDispatch();
 
+
   return (
     <>
       Count:{count}
