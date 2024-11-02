@@ -6,7 +6,17 @@ export default defineConfig({
   plugins: [react()],
   base: '/react-redux-vite-app/',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   server: {
     port: 3000,
